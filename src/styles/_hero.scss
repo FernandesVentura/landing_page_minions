@@ -1,0 +1,73 @@
+
+.hero {
+    padding: 5.6vw;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-image: linear-gradient( to left, transparent , black 100%), url(../images/BANNER_MINIONS.jpg);
+    text-align: center;
+    background-position: center; 
+    background-size: cover;
+    position: relative  ;
+    z-index: 1;
+
+    @media (max-width: 768px ) {
+        padding-top: 20px;
+        width: 100%;
+    }
+    
+    
+    
+    &__content {
+        max-width: 640px;
+        z-index: 2;
+        padding: 0 20px;
+        background-attachment: fixed;
+        
+
+        &__branding {
+            max-width: 600px;
+            margin: 0 auto 10vh;
+            
+            img {
+                width: 100%;
+            }
+
+            p {
+                margin-top: 16px;
+            }
+
+            @media (max-width: 768px ) {
+                margin: 56px auto;
+            }
+        }
+
+        .subtitle {
+            line-height: 35px;
+            margin-bottom: 20px
+        }
+
+        &__button {
+            padding: 20px;
+            margin-top: 20px;
+            background-color: rgba(245, 208, 76, 0.673);
+            font-size: 20px;
+            font-weight: bold;
+            width: 300px;
+            text-transform: uppercase;
+            border-radius: 15px;
+            border: none;
+            margin-bottom: 50px;
+
+            @media (max-width: 768px ) {
+                margin-top: 100px;
+            }
+
+
+            &:hover {
+                background-color: rgb(245, 208, 76);
+                
+                cursor: pointer;
+            }
+        }
+    }
+}

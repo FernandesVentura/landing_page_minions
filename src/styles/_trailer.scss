@@ -1,0 +1,68 @@
+
+.trailer {
+    display: flex;
+    justify-content: space-between;
+
+    &__img {
+
+        img {
+            max-width: 250px;
+
+            @media (max-width: 1024px ) {
+                width: 200px;
+    
+            }
+
+            @media (max-width: 1000px ) {
+                display: none;
+    
+            }
+
+
+        }
+    }
+
+    &__content {
+        text-align: center;
+        width: 500px;
+
+
+        @media (max-width: 768px ) {
+            width: 100%;
+        }
+
+        h3 {
+            margin: 80px 0;
+            padding-top: 40px;
+
+            @media (max-width: 768px ) {
+                font-size: 32px;
+            }
+        }
+
+        &__video{
+            width: 500px;
+            height: 315px;
+            margin-bottom: 50px;
+
+            @media (max-width: 768px ) {
+                width: 100%;
+            }
+        }
+        
+        p {
+            color: white;
+            font-size: 18px; 
+            letter-spacing: 1px; 
+            
+            @media (max-width: 768px ) {
+                font-size: 16px;
+                letter-spacing: normal;
+                
+                
+            }
+
+        }
+        
+    }
+}

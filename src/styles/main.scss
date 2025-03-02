@@ -1,0 +1,62 @@
+@use 'hero';
+@use 'trailer';
+@use 'credit';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+$corDeFundo: #040714;
+$corTextoPrincipal: silver;
+$corTextoSecundario: #f9f9f9;
+$corButton: rgb(245, 208, 76);
+
+body {
+    background-color: $corDeFundo;
+} 
+    
+@mixin text($fontSize: 32px) {
+    font-size: $fontSize;
+    line-height: + 10px;
+    color: $corTextoPrincipal;
+}
+
+@mixin title ($fontSize: 32px) {
+    @include text ($fontSize);
+    color: $corTextoSecundario;
+}
+
+.text--big {
+    @include text (18px);
+}
+    
+.text {
+    @include text;
+}
+
+.text--small {
+    @include text(12px)
+}
+
+.title--big {
+    @include title(56px);
+}
+
+.title {
+    @include title;
+}
+
+.title--small {
+    @include title (24px)
+}
+
+.link-text {
+    @include text (18px);
+    color: $corTextoSecundario;
+    text-decoration: underline;
+} 
+
